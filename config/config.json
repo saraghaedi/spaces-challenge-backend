@@ -1,8 +1,6 @@
 {
   "development": {
-    "url": "YOUR_ELEPHANTSQL_URL_HERE",
-    "dialect": "postgres",
-    "operatorsAliases": "0"
+    "url": "postgres://ocyyabcw:awXIEf6cVeXizZBJr6gmOIbA89xsrXz6@hattie.db.elephantsql.com/ocyyabcw"
   },
   "test": {
     "username": "root",
