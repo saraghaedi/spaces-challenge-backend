@@ -6,6 +6,7 @@ const authRouter = require("./routers/auth");
 const authMiddleWare = require("./auth/middleware");
 const spaceRoter = require("./routers/space");
 const userRouter = require("./routers/user");
+const storyRouter = require("./routers/story");
 
 const app = express();
 
@@ -123,6 +124,7 @@ if (process.env.DELAY) {
 app.use("/", authRouter);
 app.use("/spaces", spaceRoter);
 app.use("/users", userRouter);
+app.use("/stories", storyRouter);
 
 // Listen for connections on specified port (default is port 4000)
 
