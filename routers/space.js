@@ -34,7 +34,7 @@ router.get("/:id", async (req, res, next) => {
 router.put("/:id", authMiddleWare, async (req, res, next) => {
   try {
     const spaceId = parseInt(req.params.id);
-    const spaceToBeUpdated = await Space.findByPk(spaceId);
+    const spaceToBeUpdated = await Space.findByPk(spaceId );
     if (!spaceToBeUpdated) {
       return res.status(404).send({ message: "Space not found" });
     }
